@@ -26,8 +26,8 @@ struct ContentView: View {
                 HStack {
                     Text("\(lround(sliderValue))")
                         .foregroundColor(.white)
-                        .frame(width: 60)
-                    ColorSlider(value: $sliderValue)
+                        .frame(width: 50)
+                    ColorSlider(value: $sliderValue, color: .red)
                     TextField("", text: $stringValue)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .frame(width: 60)
