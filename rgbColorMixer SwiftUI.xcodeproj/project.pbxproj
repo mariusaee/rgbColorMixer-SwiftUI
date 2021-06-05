@@ -11,6 +11,7 @@
 		2933B809266B76180053CC0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2933B808266B76180053CC0A /* ContentView.swift */; };
 		2933B80B266B761D0053CC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2933B80A266B761D0053CC0A /* Assets.xcassets */; };
 		2933B80E266B761D0053CC0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2933B80D266B761D0053CC0A /* Preview Assets.xcassets */; };
+		2933B816266B78700053CC0A /* ColoredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2933B815266B78700053CC0A /* ColoredView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		2933B80A266B761D0053CC0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2933B80D266B761D0053CC0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2933B80F266B761D0053CC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2933B815266B78700053CC0A /* ColoredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				2933B806266B76180053CC0A /* rgbColorMixer_SwiftUIApp.swift */,
 				2933B808266B76180053CC0A /* ContentView.swift */,
+				2933B815266B78700053CC0A /* ColoredView.swift */,
 				2933B80A266B761D0053CC0A /* Assets.xcassets */,
 				2933B80F266B761D0053CC0A /* Info.plist */,
 				2933B80C266B761D0053CC0A /* Preview Content */,
@@ -140,6 +143,7 @@
 			files = (
 				2933B809266B76180053CC0A /* ContentView.swift in Sources */,
 				2933B807266B76180053CC0A /* rgbColorMixer_SwiftUIApp.swift in Sources */,
+				2933B816266B78700053CC0A /* ColoredView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
