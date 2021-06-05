@@ -8,17 +8,28 @@
 import SwiftUI
 
 struct ColoredView: View {
+    @Binding var redValue: Double
+    @Binding var greenValue: Double
+    @Binding var blueValue: Double
+    
     var body: some View {
         RoundedRectangle(cornerRadius: 25)
-            .overlay(RoundedRectangle(cornerRadius: 25.0).stroke(Color.white, lineWidth: 4))
+            .foregroundColor(Color(
+                red: redValue,
+                green: greenValue,
+                blue: blueValue))
+            .overlay(RoundedRectangle(cornerRadius: 25.0)
+                        .stroke(Color.white, lineWidth: 4))
             .frame(height: 170)
-            .padding()
-            .foregroundColor(Color(red: 0, green: 0, blue: 0))
     }
 }
 
 struct ColoredView_Previews: PreviewProvider {
     static var previews: some View {
-        ColoredView()
+        ColoredView(
+            redValue: .constant(0),
+            greenValue: .constant(1),
+            blueValue: .constant(1)
+        )
     }
 }
