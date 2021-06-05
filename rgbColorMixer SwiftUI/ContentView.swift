@@ -12,6 +12,8 @@ struct ContentView: View {
     @State private var redValue = Double.random(in: 0...1)
     @State private var greenValue = Double.random(in: 0...1)
     @State private var blueValue = Double.random(in: 0...1)
+    @State private var sliderValue = Double.random(in: 0...255)
+    @State private var stringValue = "200"
 
     var body: some View {
         
@@ -19,8 +21,20 @@ struct ContentView: View {
             Color(red: 32/255, green: 88/255, blue: 154/255)
                 .ignoresSafeArea()
             
-            VStack{
+            VStack(spacing: 40) {
                 ColoredView(redValue: $redValue, greenValue: $greenValue, blueValue: $blueValue)
+                HStack {
+                    Text("\(lround(sliderValue))")
+                        .foregroundColor(.white)
+                        .frame(width: 60)
+                    ColorSlider(value: $sliderValue)
+                    TextField("", text: $stringValue)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .frame(width: 60)
+                        .multilineTextAlignment(.trailing)
+                }
+                .font(.title2)
+                Spacer()
             }
             .padding()
         }
